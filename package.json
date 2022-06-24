@@ -1,0 +1,13 @@
+{
+  "name": "trip-tracker",
+  "version": "1.0.0",
+  "description": "Tracking Trips",
+  "main": "index.js",
+  "devDependencies": {
+    "jest": "^28.0.2"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  }
+}
