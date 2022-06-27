@@ -15,6 +15,16 @@ Dan: 39 miles @ 47 mph
 Kumi: 0 miles
 `;
   const nodePath = process.argv0;
-  const actualOutput = execFileSync('node', ['./bin/runner.js'], { cwd: process.cwd(), input, encoding: 'utf8' })
-  expect(actualOutput).toEqual(expectedOutput)
+  const actualOutput = execFileSync('node', ['./bin/runner.js'], {
+    cwd: process.cwd(),
+    input,
+    encoding: 'utf8'
+  });
+  expect(actualOutput).toEqual(expectedOutput);
+});
+
+test('abc', () => {
+  const input = 'abc';
+  const expectedOutput = 'abc';
+  expect(input).toEqual(expectedOutput);
 });
